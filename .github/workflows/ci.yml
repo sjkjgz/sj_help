@@ -25,4 +25,4 @@ jobs:
         ossutil cp _sidebar.md oss://$BUCKET/ -rf
         ossutil cp README.md oss://$BUCKET/ -rf
         ossutil cp sw.js oss://$BUCKET/ -rf
-        ossutil cp src oss://$BUCKET/ -rf
+        ossutil cp src oss://$BUCKET/src/ -rf
