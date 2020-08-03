@@ -5,8 +5,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    # name:  A job to deploy web(OSS).
-    # steps:
+    name:  A job to deploy web(OSS).
+    steps:
     # - name: Checkout(获取源码)
     #   uses: actions/checkout@v1
     # - name: Setup node(安装node环境)
