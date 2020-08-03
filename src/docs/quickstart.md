@@ -20,7 +20,7 @@
 
 
 
-如果你已拥有平台账号，而没有企业，请登录后先 [加入企业](http://user.saas123.com/allCompany) 或 [创建企业](http://user.saas123.com/registCompany) ；
+如果你已拥有平台账号，而没有企业，请登录后 [加入企业](http://user.saas123.com/allCompany) 或 [创建企业](http://user.saas123.com/registCompany) ；
 
 
 
@@ -46,6 +46,6 @@
 
 ##  进入应用
 
-等订单支付成功后，点击应用标题的图片，打开`应用侧栏` ，切换到个人或企业，就可以看到你购买的应用了
+等订单支付成功后，点击应用标题的图片，打开 `应用侧栏` ，切换到个人或企业，就可以看到你购买的应用了
 
 ![image-20200803140250333](.\quickstart.assets\image-20200803140250333.png)
