@@ -1,0 +1,39 @@
+name: oss
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # name:  A job to deploy web(OSS).
+    # steps:
+    # - name: Checkout(获取源码)
+    #   uses: actions/checkout@v1
+    # - name: Setup node(安装node环境)
+    #   uses: actions/setup-node@v1
+    #   with:
+    #     node-version: "12.x"
+    # - name: Cache node modules(获取缓存,首次没有就缓存)
+    #   id: cache
+    #   uses: actions/cache@v1
+    #   with:
+    #     path: node_modules
+    #     key: ${{runner.OS}}-npm-caches-${{ hashFiles('package-lock.json') }} # Linux-npm-caches-e87d4692eafbc98fd7477e38aa502a6b39f20ffda3ab5b4d51171838ca791f3c
+    # - name: Install Dependencies(安装依赖,有缓存跳过)
+    #   if: steps.cache.outputs.cache-hit != 'true'
+    #   run: npm install
+    # - name: Build project(编译打包项目)
+    #   run: |
+    #     npm run build
+    - name: Setup ossutil(安装阿里云oss工具)
+      uses: manyuanrong/setup-ossutil@v1.0
+      with:
+        endpoint: "oss-cn-shenzhen.aliyuncs.com" # endpoint 可以去oss控制台上查看，主要区分地区
+        access-key-id: ${{ secrets.OSS_ACCESS_KEY_ID }} # 在阿里云申请子账号，拥有oss的管理权限，获取密钥后，需要配置在github的secrets里面的accesskeys
+        access-key-secret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+    - name: Upload aliyun oss(上传编译后文件到阿里云oss)
+      env: 
+        BUCKET: sj-help
+      run: |
+        ossutil rm oss://$BUCKET/static/ -rf
+        ossutil cp . oss://$BUCKET/ -rf
