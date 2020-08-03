@@ -7,7 +7,7 @@
 </p> -->
 ![logo](src/assets/_media/favicon.png)
 
-# 尚捷云 - 帮助中心 <small>2.0.1</small>
+# 尚捷云 - 帮助中心 
 
 > 助力服装行业，共赢未来。
 

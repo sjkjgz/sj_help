@@ -1,94 +1,51 @@
 # 快速开始
 
-推荐全局安装 `docsify-cli` 工具，可以方便地创建及在本地预览生成的文档。
+本章节如何教你如何快速注册个人或企业账号，同时订阅进入相关的业务应用。
 
-```bash
-npm i docsify-cli -g
-```
+## 注册账号
 
-## 初始化项目
+在使用平台任意应用之前，你需要先注册账号，前往 [注册](http://account.saas123.com/oauth/regist) 。
 
-如果想在项目的 `./docs` 目录里写文档，直接通过 `init` 初始化项目。
+![image-20200803134914274](D:\workspace\sj_help\src\docs\quickstart.assets\image-20200803134914274.png)
 
-```bash
-docsify init ./docs
-```
+## 同时注册企业
 
-## 开始写文档
+如果你需要购买的是企业应用，而现在你没有账号也没有企业，你注册时需要切换到企业注册模式。
 
-初始化成功后，可以看到 `./docs` 目录下创建的几个文件
-
-- `index.html` 入口文件
-- `README.md` 会做为主页内容渲染
-- `.nojekyll` 用于阻止 GitHub Pages 忽略掉下划线开头的文件
-
-直接编辑 `docs/README.md` 就能更新文档内容，当然也可以[添加更多页面](zh-cn/more-pages.md)。
-
-## 本地预览
-
-通过运行 `docsify serve` 启动一个本地服务器，可以方便地实时预览效果。默认访问地址 http://localhost:3000 。
-
-```bash
-docsify serve docs
-```
-
-?> 更多命令行工具用法，参考 [docsify-cli 文档](https://github.com/docsifyjs/docsify-cli)。
-
-## 手动初始化
-
-如果不喜欢 npm 或者觉得安装工具太麻烦，我们可以直接手动创建一个 `index.html` 文件。
-
-*index.html*
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      //...
-    }
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-</body>
-</html>
-```
-
-如果你的系统里安装了 Python 的话，也可以很容易地启动一个静态服务器去预览你的网站。
-
-```bash
-cd docs && python -m SimpleHTTPServer 3000
-```
-
-## Loading 提示
-
-初始化时会显示 `Loading...` 内容，你可以自定义提示信息。
+![image-20200803135612716](D:\workspace\sj_help\src\docs\quickstart.assets\image-20200803135612716.png)
 
 
-```html
-  <!-- index.html -->
-  
-  <div id="app">加载中</div>
-```
 
-如果更改了 `el` 的配置，需要将该元素加上 `data-app` 属性。
+![image-20200803135636674](D:\workspace\sj_help\src\docs\quickstart.assets\image-20200803135636674.png)
 
-```html
-  <!-- index.html -->
-  <div data-app id="main">加载中</div>
 
-  <script>
-    window.$docsify = {
-      el: '#main'
-    }
-  </script>
-```
 
-对比 [el 设置](configuration.md#el)。
+如果你已拥有平台账号，而没有企业，请登录后先 [加入企业](http://user.saas123.com/allCompany) 或 [创建企业](http://user.saas123.com/registCompany) ；
+
+
+
+## 订阅应用
+
+前往[应用商城](http://apps.saas123.com/),选择需要的应用，选择套餐，下单，支付。
+
+![image-20200803135952138](D:\workspace\sj_help\src\docs\quickstart.assets\image-20200803135952138.png)
+
+选择套餐
+
+
+
+![image-20200803140007295](D:\workspace\sj_help\src\docs\quickstart.assets\image-20200803140007295.png)
+
+确认下单，并前往支付
+
+
+
+![image-20200803140110779](D:\workspace\sj_help\src\docs\quickstart.assets\image-20200803140110779.png)
+
+推荐使用线上支付，如果是线下需要等待管理员审核。
+
+##  进入应用
+
+等订单支付成功后，点击应用标题的图片，打开`应用侧栏` ，切换到个人或企业，就可以看到你购买的应用了
+
+![image-20200803140250333](D:\workspace\sj_help\src\docs\quickstart.assets\image-20200803140250333.png)
