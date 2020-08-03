@@ -7,24 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     name:  A job to deploy web(OSS).
     steps:
-     - name: Checkout(获取源码)
-       uses: actions/checkout@v1
-    # - name: Setup node(安装node环境)
-    #   uses: actions/setup-node@v1
-    #   with:
-    #     node-version: "12.x"
-    # - name: Cache node modules(获取缓存,首次没有就缓存)
-    #   id: cache
-    #   uses: actions/cache@v1
-    #   with:
-    #     path: node_modules
-    #     key: ${{runner.OS}}-npm-caches-${{ hashFiles('package-lock.json') }} # Linux-npm-caches-e87d4692eafbc98fd7477e38aa502a6b39f20ffda3ab5b4d51171838ca791f3c
-    # - name: Install Dependencies(安装依赖,有缓存跳过)
-    #   if: steps.cache.outputs.cache-hit != 'true'
-    #   run: npm install
-    # - name: Build project(编译打包项目)
-    #   run: |
-    #     npm run build
+    - name: Checkout(获取源码)
+      uses: actions/checkout@v1
     - name: Setup ossutil(安装阿里云oss工具)
       uses: manyuanrong/setup-ossutil@v1.0
       with:
