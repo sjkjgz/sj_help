@@ -35,5 +35,5 @@ jobs:
       env: 
         BUCKET: sj-help
       run: |
-        ossutil rm oss://$BUCKET/static/ -rf
-        ossutil cp . oss://$BUCKET/ -rf
+        # ossutil rm oss://$BUCKET/static/ -rf
+        ossutil cp / oss://$BUCKET/ -rf
