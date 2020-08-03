@@ -35,5 +35,11 @@ jobs:
       env: 
         BUCKET: sj-help
       run: |
-        # ossutil rm oss://$BUCKET/static/ -rf
-        ossutil cp / oss://$BUCKET/ -rf
+        ossutil rm oss://$BUCKET/ -rf
+        ossutil cp index.html oss://$BUCKET/ 
+        ossutil cp _coverpage.md oss://$BUCKET/ 
+        ossutil cp _navbar.md oss://$BUCKET/ 
+        ossutil cp _sidebar.md oss://$BUCKET/ 
+        ossutil cp README.md oss://$BUCKET/ 
+        ossutil cp sw.js oss://$BUCKET/
+        ossutil cp src oss://$BUCKET/ 
