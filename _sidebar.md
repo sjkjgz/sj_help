@@ -11,5 +11,5 @@
   * [应用商城](src/apps/apps.md)
   * [企业后台](src/company/company.md)
 * 应用相关
-  * [跟单通](src/b2b/b2b.md)
-  
+  * [跟单通](src/b2b/b2b.md) 
+  * [成本核价](src/cos/cos.md)  
