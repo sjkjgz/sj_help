@@ -15,3 +15,4 @@
   * [成本核价](src/cos/cos.md)  
   * [产品管理](src/pdm/pdm.md)
   * [制版管理](src/pms/pms.md)
+  * [MES系统](src/mes/mes.md)
