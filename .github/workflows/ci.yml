@@ -8,9 +8,9 @@ jobs:
     name:  A job to deploy web(OSS).
     steps:
     - name: Checkout(获取源码)
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
     - name: Setup ossutil(安装阿里云oss工具)
-      uses: manyuanrong/setup-ossutil@v1.0
+      uses: manyuanrong/setup-ossutil@master
       with:
         endpoint: "oss-cn-shenzhen.aliyuncs.com" # endpoint 可以去oss控制台上查看，主要区分地区
         access-key-id: ${{ secrets.OSS_ACCESS_KEY_ID }} # 在阿里云申请子账号，拥有oss的管理权限，获取密钥后，需要配置在github的secrets里面的accesskeys
