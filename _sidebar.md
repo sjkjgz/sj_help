@@ -4,6 +4,7 @@
   * [尚捷云数据安全](src/docs/safety.md)
   * [怎么给尚捷云反馈](src/docs/feedback.md)
   * [常见问题](src/docs/faq.md)
+  * [系统操作文档PDF](src/docs/操作文档.md)
 * 基础
   * [快速开始](src/docs/quickstart.md)
   * [工作台](src/user/work.md)
